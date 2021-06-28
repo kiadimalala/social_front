@@ -103,9 +103,8 @@ function SignUp() {
             <button
               disabled={isInvalid}
               type="submit"
-              className={`h-8 bg-black-coral mx-2 mb-4 text-baby-powder font-semibold ${
-                isInvalid && "opacity-50"
-              }`}
+              className={`h-8 bg-black-coral mx-2 mb-4 text-baby-powder font-semibold ${isInvalid && "opacity-50"
+                }`}
               onClick={(e) => handleLogin(e)}
             >
               S'incrire
@@ -119,7 +118,7 @@ function SignUp() {
               to={ROUTES.LOGIN}
               className="text-safety-yellow font-semibold"
             >
-              Inscrivez-vous
+              Se connecter
             </Link>
           </p>
         </div>

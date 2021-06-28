@@ -24,10 +24,9 @@ function Login() {
         identifier: email,
         password,
       });
-      console.log(response)
       const newToken = await response.data.jwt;
       setToken(newToken);
-     //history.push("/");
+      history.push("/");
     } catch (error) {
       const message = error.response //error.response.data.message[0].messages[0].message;
       console.log(message)
